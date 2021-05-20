@@ -1,0 +1,118 @@
+h1{
+    text-align: center;
+    color: darkorange;
+    font-size: 3rem;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-variant: small-caps;
+    text-shadow: 10px 10px 10px navy;
+    
+}
+
+body{
+    background-color: blueviolet;
+}
+
+#symbol-anim{
+    width: 150px;
+    margin: 0 auto;
+    padding: 50px;
+
+    text-align: center;
+    animation-name: anim1;
+    animation-duration: 1sec;
+}
+
+@keyframes anim1{
+
+    from{
+        font-size: 2rem;
+    }
+    to{
+        font-size: 4rem
+    }
+
+}
+
+
+
+ .inp-wrap{
+    width: 100%;
+    height: 10%;
+    margin: 20px auto;
+    
+
+} 
+
+.input-box{
+    width: 580px;
+    height: 100%;
+    margin: 0 10px;
+    box-sizing: border-box;
+    font-size: 2rem;
+    border: 2px solid navy;
+    text-align: right;
+    background-color: indigo;
+    color: orange;
+    border-radius: 20px;
+    outline: tomato;
+    
+}
+
+.input-box:hover{
+    border-color: orangered;
+}
+
+.input-box:focus{
+    border: 2px solid red;
+    background-color: purple;
+}
+
+.calc {
+    height: 600px;
+    width: 600px;
+    margin: auto;
+    box-shadow: 20px 20px 50px navy;
+    background-color: mediumpurple;
+    border-radius: 50px;
+    
+}
+
+.buttons{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    
+    
+}
+
+#answer{
+    width: 380px;
+    background-color: saddlebrown;
+    outline: none;
+}
+
+button{
+    height: 50px;
+    width: 80px;
+    margin: 10px;
+    background-color: indigo;
+    color: darkorange;
+    font-size: 2rem;
+    border: navy;
+    border-radius: 20px;
+    outline: none;
+    transition-property: background-color;
+}
+
+button:hover, 
+#answer:hover{
+    background-color: purple;
+}
+
+button:active, 
+#answer:active{
+    background-color: mediumorchid;
+    
+}
+
