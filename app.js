@@ -77,11 +77,18 @@ for (item of btns) {
                 }
 
                 else {
-
+                    
                     if(buttontext == 'X'){
                         buttontext = '*'
                     }
-                    arrval[arrval.length - 1] = buttontext
+
+                    if(ch == ')' || ch == '('){
+                        arrval.push(buttontext);
+                    }
+                    else{
+                        arrval[arrval.length - 1] = buttontext
+                    }
+                    
                     decimalvalue = true
                     screenval = arrval.join('')
                 }
