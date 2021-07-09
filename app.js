@@ -1,13 +1,29 @@
 const inp = document.getElementById('inp')
-const btns = document.querySelectorAll('button')
+const btns = document.querySelectorAll('button');
+const symbolAnim = document.querySelector('#symbol-anim');
 
 screenval = "0"
 decimalvalue = true
 
 for (item of btns) {
     item.addEventListener('click', (e) => {
-        buttontext = e.target.innerText
+        
+        symbolAnim.innerText = e.currentTarget.innerText;
+        let id = symbolAnim.animate({
+            fontSize: ["1.5rem", "7rem"],
+            easing: "ease-out"
+        }, {
+            duration: 400,
+            iterations: 1,
+            }
+        );
 
+        setTimeout(function(){
+            symbolAnim.innerText = ""    
+        }, 390)
+        
+
+        buttontext = e.target.innerText
 
         if (buttontext == 'CE') {
             ch = screenval.charAt(screenval.length - 1)
